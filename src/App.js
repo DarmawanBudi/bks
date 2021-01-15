@@ -1,7 +1,5 @@
-// import logo from './logo.svg';
-// import './App.css';
 import React, { useState } from 'react';
-
+import './App.css';
 
 function App() {
     const [p1, setP1] = useState("");
@@ -34,7 +32,7 @@ function App() {
         }
     }
 
-    const Hapus = () => {
+    const Clear = () => {
             setP1("")
             setP2("")
             setHasil("")
@@ -61,34 +59,34 @@ function App() {
             <br></br>
 
             <div className="row text-center">
-                <div className="col-8" style={{ paddingLeft: 270, paddingRight: 10 }}>
+                <div className="col-8 rules">
                     <button className="btn btn-success btn-block" onClick={() => Rules()}><b>=</b></button>
                 </div>
-                <div className="col-2" style={{ paddingRight: 80 }}>
-                    <button className="btn btn-danger btn-block" onClick={() => Hapus()}>clear</button>
+                <div className="col-2 clear">
+                    <button className="btn btn-danger btn-block" onClick={() => Clear()}>clear</button>
                 </div>
             </div>
 
             <br></br>
 
-            <div className="row" style={{ paddingTop: 100, marginLeft:200 }}>
+            <div className="row in">
                 <div className="col-3">
                 <input className="form-control text-center" value={p1 !== "" ? "player 1" : ""} disabled></input>&nbsp;
                 </div>
-                <span style={{ marginTop: 9 }}> <b>VS</b> </span>&nbsp;
+                <span  className="vs"> <b>VS</b> </span>&nbsp;
                 <div className="col-3">
                 <input className="form-control text-center" value={p2 !== "" ? "player 2" : ""} disabled></input>&nbsp;
                 </div>
-                <span style={{ marginTop: 7 }}> <b>=</b> </span>&nbsp;
+                <span  className="equals"> <b>=</b> </span>&nbsp;
                 <div className="col-3">
                 <input className="form-control text-center" value={hasil} disabled /><br></br>
                 </div>
             </div>
-            <div style={{ paddingTop: 50, paddingRight: 170 }}>
+            <div className="out">
                 <input className="text-center" type={type} value={tampil1} disabled></input>&nbsp;
                 <span> <b>VS</b> </span>&nbsp;
                 <input className="text-center" type={type} value={tampil2} disabled></input>&nbsp;
-                <button className="btn btn-warning btn-sm" style={{ marginBottom: 3 }} onClick={() => Show()}>show</button>
+                <button className="btn btn-warning btn-sm show" onClick={() => Show()}>show</button>
             </div>
         </div>
     );
