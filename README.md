@@ -1,3 +1,3 @@
 ## Hosting URL:
 
-https://batu-kertas-gunting-a2e19.web.app
+https://batu-kertas-gunting.netlify.app/
