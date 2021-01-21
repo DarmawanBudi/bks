@@ -80,10 +80,10 @@ function App() {
             <br></br>
 
             <div className="row text-center">
-                <div className="col-md-8 col-sm-6">
+                <div className="col-md-8 col-6">
                     <button className="btn btn-success btn-block btn-lg" onClick={() => Rules()}><b>=</b></button>
                 </div>
-                <div className="col-md-4 col-sm-6">
+                <div className="col-md-4 col-6">
                     <button className="btn btn-danger btn-block btn-lg" onClick={() => Clear()}><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
@@ -91,34 +91,34 @@ function App() {
             <br></br>
 
             <div className="row mt-5">
-                <div className="col-md-3 col-sm-5">
+                <div className="col-md-3 col-5">
                     <input className="form-control text-center" value={p1 !== "" ? "player" : ""} disabled></input>
                 </div>
-                <div className="col-md-1 col-sm-2 mt-2">
+                <div className="col-md-1 col-2 mt-2">
                     <span> <b>VS</b> </span>
                 </div>
-                <div className="col-md-3 col-sm-5">
+                <div className="col-md-3 col-5">
                     <input className="form-control text-center" value={p2 !== "" ? "ai" : ""} disabled></input>
                 </div>
-                <div className="col-md-1 col-sm-12 mt-1">
+                <div className="col-md-1 col-12 mt-1">
                     <span> <b>=</b> </span>
                 </div>
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-4 col-12">
                     <input className="form-control text-center" value={hasil} disabled /><br></br>
                 </div>
             </div>
 
             <div className="row mt-5">
-                <div className="col-md-3 col-sm-4">
+                <div className="col-md-3 col-5">
                     <input className="form-control text-center" type={type} value={tampil1} disabled></input>
                 </div>
-                <div className="col-md-1 col-sm-2 mt-1">
+                <div className="col-md-1 col-2 mt-1">
                     <span> <b>VS</b> </span>
                 </div>
-                <div className="col-md-3 col-sm-4">
+                <div className="col-md-3 col-5">
                     <input className="form-control text-center" type={type} value={tampil2} disabled></input>
                 </div>
-                <div className="col-md-1 col-sm-2 mt-1">
+                <div className="col-md-1 col-12 mt-1">
                     <button className="btn btn-warning btn-sm btn-block" onClick={() => Show()} disabled={hasil === ""}><i class="fas fa-eye"></i></button>
                 </div>
             </div>
